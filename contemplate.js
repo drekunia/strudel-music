@@ -12,7 +12,7 @@ stack(
   ._punchcard(), 
   
   stack(
-    s("{bd [sd ~ ~ bd] [bd ~ ~ ~] sd}*4")
+    s("{bd [sd ~ ~ bd] bd sd}*4")
     .bank("tr909"),
     s("{[~ hh ~ <hh <hh <oh cp>>>]*4}*4")
     .bank("tr808"),
@@ -20,8 +20,8 @@ stack(
   ._scope(),
 
   n(`
-  [12 ~ 15 [~ 14]] [13 10] 11
-  <[[6, 9] ~ 8 3] [[11, 13] ~ [10, 12] [11, 13]]>
+  [12@2 15 [~ 14]] [13 10] 11
+  <[[6, 9]@2 8 3] [[11, 13]@2 [10, 12] [11, 13]]>
   `)
   .scale("C:lydian").sound("piano").hpf(1000).room(.8)
   .pianoroll()

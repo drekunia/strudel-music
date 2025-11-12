@@ -1,6 +1,6 @@
 # strudel-music
 Collection of music I made with Strudel. 
 
-Strudel is a music live coding language for the browser environment [Strudel REPL](https://strudel.cc/), porting the TidalCycles pattern language to JavaScript.
+Strudel is a music live coding language for the browser environment [Strudel REPL](https://strudel.cc/), porting the [TidalCycles](https://tidalcycles.org/) pattern language to JavaScript.
 
 - [Contemplate](https://strudel.cc/#Ly8gQHRpdGxlIENvbnRlbXBsYXRlCi8vIEBieSBBbmRyZSBLdXJuaWF3YW4KLy8gQGxpY2Vuc2UgQ0MgQlktTkMtU0EKCnNldGNwbSgxODAvNjApCgpzdGFjaygKICBjaG9yZCgiQ003IEQ3IEVtNyBHTTciKQogIC52b2ljaW5nKCkudm93ZWwoIm8iKS5zKCJzdXBlcnNhdyIpCiAgLnRyZW1vbG9zeW5jKCI0IikudHJlbW9sb3NrZXcoIi44NSIpCiAgLmxwZigyMDAwKS5yb29tKC41KQogIC5fcHVuY2hjYXJkKCksIAogIAogIHN0YWNrKAogICAgcygie2JkIFtzZCB%2BIH4gYmRdIGJkIHNkfSo0IikKICAgIC5iYW5rKCJ0cjkwOSIpLAogICAgcygie1t%2BIGhoIH4gPGhoIDxoaCA8b2ggY3A%2BPj5dKjR9KjQiKQogICAgLmJhbmsoInRyODA4IiksCiAgKQogIC5fc2NvcGUoKSwKCiAgbihgCiAgWzEyQDIgMTUgW34gMTRdXSBbMTMgMTBdIDExCiAgPFtbNiwgOV1AMiA4IDNdIFtbMTEsIDEzXUAyIFsxMCwgMTJdIFsxMSwgMTNdXT4KICBgKQogIC5zY2FsZSgiQzpseWRpYW4iKS5zb3VuZCgicGlhbm8iKS5ocGYoMTAwMCkucm9vbSguOCkKICAucGlhbm9yb2xsKCkKKQo%3D)

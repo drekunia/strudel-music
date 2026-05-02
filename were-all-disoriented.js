@@ -40,10 +40,10 @@ $: n(irand(16).seg(16)).scale("c:lydian").s("sawtooth")
   ._punchcard()
 
 $: stack(
-  s("bd bd sd [~ sd] [~ sd] [bd <bd ~>] <sd ~> [~ [sd <sd!3 rim>]]").bank("dmx").dist("4:.2"),
-  s("hh hh hh hh hh <hh oh> hh hh").bank("dmx").dist("3:.1")
-).slow(2)
-.sometimesBy(.125, x=>x.fast(2))
-.lpf(5000)
-.lfo({ depth: 2 }, 'lpf_mod')
-._scope()
+    s("bd bd sd [~ sd] [~ sd] [bd <bd ~>] <sd ~> [~ [sd <sd!3 rim>]]").bank("dmx").dist("4:.2"),
+    s("hh hh hh hh hh <hh oh> hh hh").bank("dmx").dist("3:.1")
+  ).slow(2)
+  .sometimesBy(.125, x=>x.fast(2))
+  .lpf(5000)
+  .lfo({ depth: 2 }, 'lpf_mod')
+  ._scope()

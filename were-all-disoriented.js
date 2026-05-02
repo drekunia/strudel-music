@@ -30,15 +30,6 @@ $: note("<c2!3 [c2@7 [b1 e2]]> <e1 <g1 [g1@7 [f#2 b2]] [g1@7 [a2 b1]]>>").slow(8
   ._scope()
   .spiral()
 
-$: n(irand(16).seg(16)).scale("c:lydian").s("sawtooth")
-  .room(.4).roomsize(4)
-  .sometimesBy(.125, x=>x.s("pink"))
-  .gain(.6)
-  .sometimesBy(.25, x=>x.fast(2))
-  .slow(4)
-  .pan("<.35 .65 .5 0 1>")
-  ._punchcard()
-
 $: stack(
     s("bd bd sd [~ sd] [~ sd] [bd <bd ~>] <sd ~> [~ [sd <sd!3 rim>]]").bank("dmx").dist("4:.2"),
     s("hh hh hh hh hh <hh oh> hh hh").bank("dmx").dist("3:.1")
@@ -47,3 +38,12 @@ $: stack(
   .lpf(5000)
   .lfo({ depth: 2 }, 'lpf_mod')
   ._scope()
+
+$: n(irand(16).seg(16)).scale("c:lydian").s("sawtooth")
+  .room(.4).roomsize(4)
+  .sometimesBy(.125, x=>x.s("pink"))
+  .gain(.6)
+  .sometimesBy(.25, x=>x.fast(2))
+  .slow(4)
+  .pan("<.35 .65 .5 0 1>")
+  ._punchcard()

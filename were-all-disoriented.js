@@ -47,3 +47,4 @@ $: n(irand(16).seg(16)).scale("c:lydian").s("sawtooth")
   .slow(4)
   .pan("<.35 .65 .5 0 1>")
   ._punchcard()
+  // .sometimes(x=>x.fast(4)) // late

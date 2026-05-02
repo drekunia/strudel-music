@@ -18,6 +18,7 @@ $: note("f#5 [g5 e5 d5@2] [a4 <<b4 [b4 <d5 f#4>]> g4>] ~ ").s("gm_violin")
   .tremsync(12).tremoloshape("cosine")
   .pan(sine)
   .hpf(2000)
+  // base
   .room(.8)
   .roomsize(4)
   .slow(4)

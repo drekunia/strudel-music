@@ -13,19 +13,19 @@ _$: note("e2 g2 a3 c3").s("sine").lpf(1000)._punchcard()
 
 _$: note("f#5 [g5 e5 d5@2] [a4 <<b4 [b4 <d5 f#4>]> g4>] ~ ").s("gm_violin")
   
-  // .pan("<.35 .65>")
-  .tremsync(12).tremoloshape("cosine").pan(sine).hpf(2000)
+  .pan("<.35 .65>")
+  // .tremsync(12).tremoloshape("cosine").pan(sine).hpf(2000)
   
   .room(.8).roomsize(4).slow(4)._punchcard()
 
 _$: note("<c2!3 [c2@7 [b1 e2]]> <e1 <g1 [g1@7 [f#2 b2]] [g1@7 [a2 b1]]>>").slow(8).s("supersaw").lpf(2000).spiral()._scope()
 
 _$:
-  s("bd? bd? ~ [~ bd?] [~ ~] [bd? <bd? ~>] <~ ~> [~ [bd? <~!3 bd?>]]").gain(0.7)
+  s("bd? bd? ~ [~ bd?] [~ ~] [bd? <bd? ~>] <~ ~> [~ [bd? <~!3 bd?>]]").gain(.7)
   
   // stack(
-  //   s("bd bd sd [~ sd] [~ sd] [bd <bd ~>] <sd ~> [~ [sd <sd!3 rim>]]").gain(0.7).rarely(palindrome),
-  //   s("hh hh hh hh hh <hh oh> hh hh").gain(0.4).speed(1.5).degrade()
+  //   s("bd bd sd [~ sd] [~ sd] [bd <bd ~>] <sd ~> [~ [sd <sd!3 rim>]]").gain(.7).rarely(palindrome),
+  //   s("hh hh hh hh hh <hh oh> hh hh").gain(.4).speed(1.5).degrade()
   // ).coarse(3)
 
   .speed(1.5)
@@ -39,9 +39,9 @@ _$:
 
 _$: n(irand("8 16").seg(16)).scale("c:lydian").s("sawtooth")
   .room(.4).roomsize(4)
-  .sometimesBy(slider(0), x=>x.s("white").lpf(5000))
-  .gain(.6)
-  .sometimesBy(.25, x=>x.fast(2))
+  .sometimesBy(slider(0), x=>x.s("white").lpf(3500))
+  .gain(.5)
+  .rarely(fast(2))
   .slow(4)
   .pan("<.35 .65 .5 0 1>")
   // .sometimes(x=>x.fast(4))

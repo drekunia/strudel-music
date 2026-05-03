@@ -4,12 +4,11 @@
 
 setcpm(110/4)
 
-$: note("b3 d3 c3").fast(4).s("gm_epiano1").hpf(500).pan(sine.slow(4)).phaser(sine).phaserdepth(sine)._punchcard()
+$: note("b3 d3 c3").fast(4).s("gm_epiano1").gain(.6).hpf(500).pan(sine.slow(4)).phaser(sine).phaserdepth(sine)._punchcard()
 
 $: chord("CM13 <Em9 GM7>").voicing().slow(8).gain(.8).s("gm_pad_choir").tremsync(4).tremolodepth(1.5).pan(sine.fast(4)).room(.8).rsize(4)._spectrum()
 
-_$: note("e2 g2 a3 c3").s("sine").lpf(1000)._punchcard()
-  // .jux(press)
+_$: note("e2 g2 a3 c3").s("sine").gain(.6).lpf(1000).juxBy(.35, press)._punchcard()
 
 _$: note("f#5 [g5 e5 d5@2] [a4 <<b4 [b4 <d5 f#4>]> g4>] ~ ").s("gm_violin").tremsync(12).tremoloshape("cosine").pan(sine).hpf(2000).room(.8).roomsize(4).slow(4)._punchcard()
 
@@ -20,7 +19,7 @@ _$:
   
   // stack(
   //   s("bd bd sd [~ sd] [~ sd] [bd <bd ~>] <sd ~> [~ [sd <sd!3 rim>]]").gain(.7).rarely(palindrome),
-  //   s("hh hh hh hh hh <hh oh> hh hh").gain(.4).speed(1.5).degrade()
+  //   s("hh hh hh hh hh <hh oh> hh hh").gain(.4).degrade()
   // ).coarse(3)
 
   .speed(1.5)

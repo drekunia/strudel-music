@@ -1,4 +1,4 @@
-// @title we're all disoriented
+// @title Spiral
 // @by Andre Kurniawan
 // @license CC BY-NC-SA
 

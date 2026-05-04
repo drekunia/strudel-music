@@ -6,7 +6,7 @@ setcpm(110/4)
 
 $: note("b3 d3 c3").fast(4).s("gm_epiano1").gain(.6).hpf(500).pan(sine.slow(4)).phaser(sine).phaserdepth(sine)._punchcard()
 
-$: chord("CM13 <Em9 GM7>").voicing().slow(8).gain(.8).s("gm_pad_choir").tremsync(4).tremolodepth(1.5).pan(sine.fast(4)).room(.8).rsize(4)._spectrum()
+$: chord("CM13 <Em9 GM7>").voicing().slow(8).gain(.8).s("gm_pad_choir").attack(.3).pan(sine.fast(4)).room(.8).rsize(4)._spectrum()
 
 _$: note("e2 g2 a3 c3").s("sine").gain(.6).lpf(1000).juxBy(.35, press)._punchcard()
 

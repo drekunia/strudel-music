@@ -28,4 +28,3 @@ d2: n(irand(8).seg("<1!3 <2!2 3>>")).scale("<c:lydian!3 c:dorian>".slow(4)).tran
 
 
 d3: s("pink").euclid(3,8).lpf(sine.range(1000, 3500)).degradeBy(.7).slow(4).sometimes(fast(8)).juxBy(.25, rev)
-
